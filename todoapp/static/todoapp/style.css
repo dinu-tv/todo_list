@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f6f8;
+    padding: 40px;
+}
+
+.container {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.add-btn {
+    display: inline-block;
+    margin-bottom: 15px;
+    padding: 10px 15px;
+    background: #4CAF50;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.add-btn:hover {
+    background: #45a049;
+}
+
+.todo-list {
+    list-style: none;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9f9f9;
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.todo-item span {
+    font-weight: bold;
+}
+
+.actions a {
+    margin-left: 8px;
+    text-decoration: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+}
+
+.view {
+    background: #2196F3;
+}
+
+.edit {
+    background: #FF9800;
+}
+
+.delete {
+    background: #f44336;
+}
+
+.actions a:hover {
+    opacity: 0.85;
+}
+
+/* Form */
+form label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    resize: none;
+    height: 120px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background: #4CAF50;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #45a049;
+}
+
+.back {
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    color: #2196F3;
+}

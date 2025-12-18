@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add / Edit To-Do</title>
+    <link rel="stylesheet" href="{% static 'todoapp/style.css' %}">
+</head>
+<body>
+
+<div class="container">
+    <h2>{% if todo %}Edit{% else %}Add{% endif %} To-Do</h2>
+
+    <form method="post">
+        {% csrf_token %}
+
+        <label>Subject</label>
+        <input type="text" name="subject" value="{{ todo.subject|default:'' }}" required>
+
+        <label>Notes</label>
+        <textarea name="notes" required>{{ todo.notes|default:'' }}</textarea>
+
+        <button type="submit">Save</button>
+    </form>
+
+    <a href="{% url 'home' %}" class="back">← Back</a>
+</div>
+
+</body>
+</html>
